@@ -1,0 +1,30 @@
+Exercice 1
+
+2 )En tapant git init , le répertoire %working_dir%/.git/ a été crée
+
+4) En tapant la commande git status, on voit les fichiers qu'on a créer mais ils
+ne sont pas suivis, c'est à dire que Git ne validera pas les changements fait à
+ce fichier.
+
+5) En tapant git add test1.txt , le fichier est desormais suivi 
+les modifications sont validés.
+
+7) Le repertoire est desormais la branche master
+
+8) git log -p affiche les changements effectuée par les "commit"
+
+9) git diff affiche en vert ce qui est rajouté sur le fichier et en rouge
+ce qui est retirée.
+
+11) Sur le depot du serveur, on retrouve le fichier créer
+
+Exercice 2
+
+2) Le Repertoire premeir Pas a été créer
+
+3) Git status retourne les fichiers dans le repertoire PermiersPas/
+
+6) Lors du Push , il y a un message d'erreur , il est impossible
+de pusher les reférences
+
+11) Il y a un conflit dans la modification des fichiers.

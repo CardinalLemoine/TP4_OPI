@@ -1,0 +1,26 @@
+Exercice 4
+
+2) On observe que valgrind n'a decouvert aucune fuite mémoire
+
+3) Dans le HEAP SUMMARY on a la taille mémoire du tas à la fin du programme 
+et la taille du tas requis pour le programme
+
+5) L'erreur se trouve à la ligne 6
+Valgrind nous informe que le tas n'as pas ete utilise, l'erreur ne vient pas
+d'un malloc
+
+6) Il faut ajouter la ligne:
+	p = (int*) malloc(size *sizeof(int));
+	après le scanf.
+
+7) L'erreur vient du fait qu'on a free(p) et que ensuite on tente de reacceder
+a p dans la voucle for. Il faut donc placer le free(p) après la deuxième boucle
+for
+
+8) Valgrind nous dit qu'il y a une fuite mémoire de 160 octets
+
+9)L'erreur se trouve à la ligne 11 , (il faut lancer la commande
+valgrind --leak-check=full ./a.out pour connaitre la ligne )
+
+10) 	il faut rajouter free(p); à la fin du programme avant le return
+
